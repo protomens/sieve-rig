@@ -18,16 +18,15 @@ Really just XMRig. This repository just includes setup configs and any additiona
 ## Usage
 Download your choice of config file. Precomipiled phone ones i.e., *Pixel3a_config.json* or the standard *config.json* which will perform benchmarking for your device. It is recommended to use the precompiled version if you have the same device as this includes optimal settings for the rig. If a precompiled version doesn't exist use the traidtional *config.json* and go through the benchmarking.
 
-Begin by running the following:
+First, copy `androidxmrig.sh` to your phone. Then, begin by running the following:
 
 ```
-$ git clone https://github.com/zetakov/sieve-rig
-$ cd sieve-rig && chmod +x *
-$ ./editconfig.sh <MoneroAddress> <WorkerName> <config.json>
-$ mv <config.json> config.json (if necessary)
+$ chmod +x androidxmrig.sh && ./androidxmrig.sh
 ```
 
-Be sure to include quotes in the **WorkerName** of it contains spaces. That's it. Start your xmrig instance and it will either do benchmarking or begin mining right away. 
+This script will compile hwloc and xmrig on your phone as well as install the necessary dependencies to do so. Be sure to read the instructionsr and fill out the prompts when asked for WORKERNAME and XMRADDRESS. 
+
+Easy peasy lemon squeezy!
 
 # Donation
 
